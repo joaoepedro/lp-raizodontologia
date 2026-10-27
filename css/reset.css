@@ -1,0 +1,11 @@
+/* Reset moderno e enxuto */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { min-height: 100vh; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+img, picture, svg, video { display: block; max-width: 100%; }
+input, button, textarea, select { font: inherit; color: inherit; }
+button { cursor: pointer; }
+p, h1, h2, h3, h4 { overflow-wrap: break-word; }
+:where(ul[class], ol[class]) { list-style: none; padding: 0; } /* :where = especificidade zero: as classes do style.css sempre vencem */
+[hidden] { display: none !important; }

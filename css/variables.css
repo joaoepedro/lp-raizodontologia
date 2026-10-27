@@ -1,0 +1,111 @@
+/* ==========================================================================
+   Raiz Odontologia — tokens de identidade visual
+   Todas as cores, fontes, espaçamentos e raios da página vêm daqui.
+   Para mudar uma cor no site inteiro, altere só o valor abaixo.
+   Contrastes calculados (WCAG) estão em docs/identidade-visual.md.
+   ========================================================================== */
+
+/* ---------- Fontes servidas pelo próprio site (.woff2) ---------- */
+@font-face {
+  font-family: "Newsreader";
+  src: url("../assets/fonts/newsreader-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Newsreader";
+  src: url("../assets/fonts/newsreader-300-italic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Newsreader";
+  src: url("../assets/fonts/newsreader-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../assets/fonts/manrope-variable.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* ---------- Cores ---------- */
+  --cor-petroleo-profundo: #12343A; /* texto principal, faixa de aviso, rodapé */
+  --cor-petroleo-noite:    #0B2529; /* estado "passar o mouse" dos botões escuros */
+  --cor-petroleo:          #1D5F66; /* RESERVADA: só para o botão principal (agendar) */
+  --cor-musgo:             #48605F; /* texto secundário, legendas */
+  --cor-nevoa:             #F1F6F5; /* fundo da página */
+  --cor-agua:              #E3EFEE; /* superfícies suaves, ícones em círculo */
+  --cor-latao:             #876838; /* destaque em texto: "raiz", rótulos, ícones */
+  --cor-latao-claro:       #C9B48A; /* decorativo: anel da foto */
+  --cor-latao-traco:       #DCCFB3; /* decorativo: traço do dente no fundo */
+  --cor-latao-logo:        #A8864E; /* contorno do dente no logo */
+  --cor-branco:            #FFFFFF; /* cartões, texto sobre o botão */
+  --cor-linha:             #CFE0DE; /* divisórias e bordas */
+  --cor-nevoa-escura:      #B8CBC9; /* texto secundário sobre fundo escuro (7,87:1 sobre Petróleo profundo) */
+  --cor-borda-campo:       #7A918F; /* borda dos campos de formulário (3,35:1 sobre branco) */
+  --cor-erro:              #A3352B; /* mensagens de erro (6,77:1 sobre branco · 6,2:1 sobre Névoa) */
+
+  /* Atalhos semânticos (use estes no style.css) */
+  --fundo:            var(--cor-nevoa);
+  --superficie:       var(--cor-branco);
+  --texto:            var(--cor-petroleo-profundo);
+  --texto-suave:      var(--cor-musgo);
+  --destaque:         var(--cor-latao);
+  --botao-principal:  var(--cor-petroleo);
+  --botao-texto:      var(--cor-branco);
+  --foco:             var(--cor-latao);
+
+  /* ---------- Tipografia ---------- */
+  --fonte-titulo: "Newsreader", Georgia, "Times New Roman", serif;
+  --fonte-texto:  "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Escala fluida: celular (375px) → computador (1440px) */
+  --texto-h1:   clamp(2.75rem, 1.78rem + 4.13vw, 5rem);     /* 44px → 80px */
+  --texto-h2:   clamp(2rem, 1.49rem + 2.16vw, 3.25rem);     /* 32px → 52px */
+  --texto-h3:   clamp(1.25rem, 1.11rem + 0.6vw, 1.625rem);  /* 20px → 26px */
+  --texto-lead: clamp(1rem, 0.89rem + 0.47vw, 1.25rem);     /* 16px → 20px */
+  --texto-base: 1rem;                                        /* 16px */
+  --texto-pequeno: 0.875rem;                                 /* 14px */
+  --texto-rotulo:  0.8125rem;                                /* 13px, caixa alta */
+
+  --peso-titulo: 300;
+  --peso-logo:   500;
+  --altura-linha-titulo: 1.04;
+  --altura-linha-texto:  1.6;
+  --espacamento-rotulo:  0.12em;
+
+  /* ---------- Espaçamento (base 8px) ---------- */
+  --esp-1: 0.25rem;  /* 4  */
+  --esp-2: 0.5rem;   /* 8  */
+  --esp-3: 1rem;     /* 16 */
+  --esp-4: 1.5rem;   /* 24 */
+  --esp-5: 2rem;     /* 32 */
+  --esp-6: 3rem;     /* 48 */
+  --esp-7: 4rem;     /* 64 */
+  --esp-8: 6rem;     /* 96 */
+  --margem-lateral: clamp(1.25rem, -0.1rem + 5.7vw, 5rem); /* 20px → 80px */
+  --largura-max: 80rem; /* 1280px de conteúdo */
+  --secao-espaco: clamp(4rem, 2.6rem + 6vw, 8rem);
+
+  /* ---------- Formas ---------- */
+  --raio-pilula: 999px; /* botões */
+  --raio-cartao: 1rem;  /* 16px */
+  --raio-grande: 1.75rem; /* 28px, blocos e fotos retangulares */
+  --sombra-cartao: 0 12px 32px rgb(18 52 58 / 0.14);
+  --borda: 1px solid var(--cor-linha);
+  --traco-anel: 1.5px solid var(--cor-latao-claro);
+
+  /* ---------- Toque e movimento ---------- */
+  --alvo-toque: 44px;
+  --duracao: 200ms;
+  --curva: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --curva-suave: cubic-bezier(0.22, 1, 0.36, 1); /* desacelera devagar no fim: animações ao rolar, FAQ e janelas */
+}

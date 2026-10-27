@@ -275,6 +275,22 @@ main:focus, section:focus, h3:focus, [tabindex="-1"]:focus { outline: none; }
   .cartao-rt__texto strong { font-size: 0.9375rem; }
 }
 
+/* Telas largas (≥1280px): o traço para de crescer com a tela.
+   Antes ele seguia a largura (113vw) enquanto o hero ficava com altura quase fixa,
+   e as raízes do dente eram cortadas a partir de ~1350px.
+   Agora: tamanho fixo (485px de altura), dente a 57,5% da largura, hero alto o bastante
+   para as raízes caberem (254 + 485 + 24 de folga) e pontas da onda que se dissolvem nas laterais. */
+@media (min-width: 1280px) {
+  .hero { min-height: 763px; }
+  .hero__traco {
+    height: 485px; width: auto;
+    top: 254px;
+    left: calc(57.5% - 736px); /* 736px = posição do dente dentro do desenho (50,8% de 1448px) */
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+            mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  }
+}
+
 /* ---------- Seções (estrutura comum) ---------- */
 .secao { padding-block: var(--secao-espaco); }
 .secao__interno { max-width: calc(var(--largura-max) + 2 * var(--margem-lateral)); margin-inline: auto; padding-inline: var(--margem-lateral); }

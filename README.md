@@ -4,6 +4,8 @@ Landing page de clínica odontológica com **agenda própria ligada ao Google Ag
 
 > Projeto conceitual de portfólio por **João Pedro Morais**, baseado em um pedido real do 99Freelas. A clínica, a equipe e os contatos são fictícios.
 
+**Site:** https://raizodontologia.vercel.app · **Código:** https://github.com/joaoepedro/lp-raizodontologia
+
 ## Tecnologias
 
 HTML, CSS e JavaScript puros. Sem frameworks, sem bibliotecas, sem etapa de build. Integração com Google Apps Script (Agenda, Planilhas e Gmail).

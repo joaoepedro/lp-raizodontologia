@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /obrigado.html
 
-Sitemap: https://raiz-odontologia.vercel.app/sitemap.xml
+Sitemap: https://raizodontologia.vercel.app/sitemap.xml

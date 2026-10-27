@@ -15,7 +15,7 @@
     /* ---------- Site ---------- */
     site: {
       nome: "Raiz Odontologia",
-      url: "https://raiz-odontologia.vercel.app", // endereço final (sem barra no fim)
+      url: "https://raizodontologia.vercel.app", // endereço final (sem barra no fim)
       projetoConceitual: true,                     // mostra a faixa de "projeto conceitual"
       autorPortfolio: "João Pedro Morais",
     },

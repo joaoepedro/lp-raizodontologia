@@ -28,7 +28,6 @@
     anteriores: U.$("#dias-anteriores"),
     proximos: U.$("#dias-proximos"),
     passoDados: U.$("#agenda-passo-dados"),
-    rotuloDados: U.$("#rotulo-dados"),
     resumo: U.$("#agenda-resumo"),
     trocar: U.$("#trocar-horario"),
     form: U.$("#form-agenda"),

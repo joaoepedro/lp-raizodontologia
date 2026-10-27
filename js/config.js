@@ -14,8 +14,6 @@
   const CONFIG = {
     /* ---------- Site ---------- */
     site: {
-      nome: "Raiz Odontologia",
-      url: "https://raizodontologia.vercel.app", // endereço final (sem barra no fim)
       projetoConceitual: true,                     // mostra a faixa de "projeto conceitual"
       autorPortfolio: "João Pedro Morais",
     },
@@ -31,7 +29,6 @@
       whatsappExibicao: "(41) 90000-0000",
       telefone: "+554130000000",            // formato internacional para o link tel:
       telefoneExibicao: "(41) 3000-0000",
-      email: "contato@raizodontologia.example",
       bairro: "Água Verde",
       cidade: "Curitiba",
       uf: "PR",
@@ -73,7 +70,7 @@
         5: ["08:00", "19:00"],
         6: ["08:00", "12:00"],
       },
-      pausa: ["12:00", "13:00"],  // almoço (dias úteis)
+      pausa: ["12:00", "13:00"],  // almoço
       fusoHorario: "-03:00",
     },
 

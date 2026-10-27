@@ -60,7 +60,7 @@ Num projeto real, estas etapas pesam mais que o próprio site para aparecer no m
 4. **Dados estruturados com o endereço completo** (rua, número, CEP) e as coordenadas exatas da clínica, iguais às do Perfil.
 5. **Search Console**
    - Adicionar a propriedade, enviar o `sitemap.xml` e acompanhar as buscas que trazem visitas.
-   - Em domínio próprio (ex.: `raizodontologia.com.br`), trocar `canonical`, `og:url`, `robots.txt`, `sitemap.xml` e `site.url` no `config.js`.
+   - Em domínio próprio (ex.: `raizodontologia.com.br`), trocar `canonical`, `og:url`, `og:image`, os endereços dos dados estruturados, `robots.txt` e `sitemap.xml`.
 6. **Conteúdo**: se a clínica quiser ir além, páginas por tratamento (ex.: "Implante dentário no Água Verde") sempre com uma ação única de agendar.
 7. **Regras do CFO** valem também no Perfil e nas respostas às avaliações: sem preço, sem promoção, sem "antes e depois" sem autorização, CRO visível.
 

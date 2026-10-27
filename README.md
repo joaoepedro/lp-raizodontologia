@@ -61,7 +61,7 @@ Textos e imagens editáveis estão marcados no HTML com `<!-- ✏️ EDITÁVEL -
 
 ## Publicar
 
-GitHub + Vercel, sem comando de build. Depois de publicar, atualize a URL em `index.html` (canonical e Open Graph), `robots.txt`, `sitemap.xml` e `js/config.js`.
+GitHub + Vercel, sem comando de build. Depois de publicar, atualize a URL em `index.html` (canonical, Open Graph e dados estruturados), `robots.txt` e `sitemap.xml`.
 
 ## Créditos
 

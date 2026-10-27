@@ -170,6 +170,6 @@
   window.Utils = Object.freeze({
     $, $$, lerConfig, armazenamento, soDigitos, mascaraTelefone, validar, linkWhatsApp,
     capturarUtms, obterUtms, hojeSP, paraData, somarDias, diaDaSemana, formatarDia, formatarHora,
-    paraMinutos, horariosDoExpediente, hash, buscarJson,
+    horariosDoExpediente, hash, buscarJson,
   });
 })();

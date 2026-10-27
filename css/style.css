@@ -24,7 +24,7 @@ a { color: var(--texto); text-underline-offset: 0.2em; text-decoration-thickness
 @media (hover: hover) and (pointer: fine) { a:hover { text-decoration-thickness: 2px; } }
 
 :focus-visible { outline: 3px solid var(--foco); outline-offset: 3px; border-radius: 4px; }
-main:focus, section:focus, h3:focus, [tabindex="-1"]:focus { outline: none; }
+main:focus, section:focus, [tabindex="-1"]:focus { outline: none; }
 
 .visualmente-oculto {
   position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
@@ -36,11 +36,12 @@ main:focus, section:focus, h3:focus, [tabindex="-1"]:focus { outline: none; }
 @media (min-width: 768px) { .so-celular { display: none; } .so-largo { display: inline; } }
 
 .pular {
-  position: absolute; left: var(--esp-3); top: -100px; z-index: 100;
+  position: absolute; left: var(--esp-3); top: 0; z-index: 100;
+  transform: translateY(-150%); /* escondido acima da tela, com qualquer tamanho de fonte */
   background: var(--texto); color: var(--cor-branco); padding: var(--esp-2) var(--esp-3);
   border-radius: var(--raio-cartao); font-weight: 600;
 }
-.pular:focus { top: var(--esp-3); }
+.pular:focus { top: var(--esp-3); transform: none; }
 
 /* ---------- Tipografia ---------- */
 .titulo-secao, .hero__titulo {
@@ -129,10 +130,10 @@ main:focus, section:focus, h3:focus, [tabindex="-1"]:focus { outline: none; }
 .topo__interno {
   max-width: calc(var(--largura-max) + 2 * var(--margem-lateral));
   margin-inline: auto; padding: 0 var(--margem-lateral);
-  height: 64px; display: flex; align-items: center; justify-content: space-between; gap: var(--esp-4);
+  min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: var(--esp-4);
 }
 
-.logo { display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; color: var(--texto); }
+.logo { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0 0.5rem; min-width: 0; text-decoration: none; color: var(--texto); } /* com fonte muito grande, "Odontologia" desce de linha em vez de empurrar o menu para fora */
 .logo__dente { width: 28px; height: 28px; stroke: var(--cor-latao-logo); stroke-width: 1.4; stroke-linejoin: round; }
 .logo__nome { font-family: var(--fonte-titulo); font-weight: var(--peso-logo); font-size: 1.5625rem; line-height: 1; }
 .logo__tipo { font-size: 0.6875rem; font-weight: 600; letter-spacing: var(--espacamento-rotulo); text-transform: uppercase; color: var(--texto-suave); }
@@ -162,7 +163,7 @@ main:focus, section:focus, h3:focus, [tabindex="-1"]:focus { outline: none; }
 .menu .botao { width: 100%; }
 
 @media (min-width: 1024px) {
-  .topo__interno { height: 88px; }
+  .topo__interno { min-height: 88px; }
   .logo__dente { width: 34px; height: 34px; }
   .logo__nome { font-size: 1.875rem; }
   .logo__tipo { font-size: 0.8125rem; }
@@ -171,10 +172,10 @@ main:focus, section:focus, h3:focus, [tabindex="-1"]:focus { outline: none; }
 @media (min-width: 1200px) {
   .menu-botao { display: none; }
   .menu {
-    position: static; display: flex; align-items: center; gap: var(--esp-6);
+    position: static; display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: var(--esp-2) var(--esp-6); /* quebra de linha só com fonte muito grande */
     background: none; border: 0; padding: 0;
   }
-  .menu__lista { flex-direction: row; gap: 2.25rem; margin: 0; }
+  .menu__lista { flex-direction: row; flex-wrap: wrap; justify-content: flex-end; gap: 0 2.25rem; margin: 0; }
   .menu__lista a { min-height: var(--alvo-toque); border: 0; font-size: 0.9375rem; white-space: nowrap; }
   .menu .botao { width: auto; white-space: nowrap; }
 }
@@ -275,11 +276,8 @@ main:focus, section:focus, h3:focus, [tabindex="-1"]:focus { outline: none; }
   .cartao-rt__texto strong { font-size: 0.9375rem; }
 }
 
-/* Telas largas (≥1280px): o traço para de crescer com a tela.
-   Antes ele seguia a largura (113vw) enquanto o hero ficava com altura quase fixa,
-   e as raízes do dente eram cortadas a partir de ~1350px.
-   Agora: tamanho fixo (485px de altura), dente a 57,5% da largura, hero alto o bastante
-   para as raízes caberem (254 + 485 + 24 de folga) e pontas da onda que se dissolvem nas laterais. */
+/* Telas largas (≥1280px): o traço tem tamanho fixo (485px de altura) para o dente caber inteiro;
+   o hero tem altura mínima de 254 + 485 + 24 de folga, e as pontas da onda somem nas laterais. */
 @media (min-width: 1280px) {
   .hero { min-height: 763px; }
   .hero__traco {
@@ -300,7 +298,7 @@ main:focus, section:focus, h3:focus, [tabindex="-1"]:focus { outline: none; }
 
 /* ---------- 2. Cuidado ---------- */
 .cuidado { background: var(--superficie); }
-.cuidado__grade { display: grid; gap: var(--esp-6); }
+.cuidado__grade { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--esp-6); } /* minmax(0,…): texto grande quebra a linha em vez de alargar a coluna */
 .cuidado__texto { display: grid; gap: var(--esp-3); color: var(--texto-suave); max-width: 36rem; }
 .cuidado__texto .titulo-secao { color: var(--texto); margin-bottom: var(--esp-2); }
 .destaque-texto { font-family: var(--fonte-titulo); font-weight: var(--peso-titulo); font-size: var(--texto-h3); color: var(--texto); line-height: 1.35; }
@@ -320,7 +318,7 @@ main:focus, section:focus, h3:focus, [tabindex="-1"]:focus { outline: none; }
   border: solid var(--destaque); border-width: 0 2px 2px 0; transform: rotate(45deg);
 }
 @media (min-width: 1024px) {
-  .cuidado__grade { grid-template-columns: 1.1fr 1fr; gap: var(--esp-8); align-items: center; }
+  .cuidado__grade { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: var(--esp-8); align-items: center; }
   .cuidado__lista-bloco { padding: var(--esp-6); }
 }
 
@@ -555,7 +553,7 @@ main:focus, section:focus, h3:focus, [tabindex="-1"]:focus { outline: none; }
 }
 .campo [aria-invalid="true"] { border-color: var(--cor-erro); }
 .campo__ajuda { font-size: 0.8125rem; color: var(--texto-suave); }
-.campo__erro { font-size: 0.8125rem; font-weight: 600; color: var(--cor-erro); min-height: 0; }
+.campo__erro { font-size: 0.8125rem; font-weight: 600; color: var(--cor-erro); }
 .campo__erro:empty { display: none; }
 .campo--opcoes { border: 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--esp-1) var(--esp-4); }
 .campo--opcoes legend { width: 100%; margin-bottom: 6px; }
@@ -589,10 +587,9 @@ main:focus, section:focus, h3:focus, [tabindex="-1"]:focus { outline: none; }
   background:
     linear-gradient(var(--destaque), var(--destaque)) center / 12px 1.5px no-repeat,
     linear-gradient(var(--destaque), var(--destaque)) center / 1.5px 12px no-repeat;
-  transition: transform var(--duracao) var(--curva);
+  transition: transform 450ms var(--curva-suave);
 }
 .faq__item[open]:not(.faq__item--fechando) summary::after { transform: rotate(45deg); }
-.faq__item summary::after { transition: transform 450ms var(--curva-suave); }
 @media (hover: hover) and (pointer: fine) { .faq__item summary:hover { color: var(--cor-petroleo-noite); } }
 .faq__item p { padding: 0 var(--esp-6) var(--esp-4) 0; color: var(--texto-suave); }
 .faq__conteudo { overflow: hidden; } /* main.js anima a altura ao abrir e fechar */
@@ -603,7 +600,7 @@ main:focus, section:focus, h3:focus, [tabindex="-1"]:focus { outline: none; }
 
 /* ---------- 9. Contato ---------- */
 .contato { background: var(--superficie); }
-.contato__grade { display: grid; gap: var(--esp-6); }
+.contato__grade { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--esp-6); }
 .contato__canais { display: grid; gap: var(--esp-3); align-content: start; color: var(--texto-suave); }
 .contato__canais .titulo-secao { color: var(--texto); }
 .canais { display: grid; gap: var(--esp-2); margin-top: var(--esp-3); }
@@ -615,7 +612,6 @@ main:focus, section:focus, h3:focus, [tabindex="-1"]:focus { outline: none; }
 .canal svg { color: var(--destaque); flex-shrink: 0; margin-top: 1px; }
 .canal > span { display: grid; gap: 2px; }
 .canal strong { color: var(--texto); font-size: 1rem; }
-.canal [data-config$="Exibicao"] { white-space: nowrap; }
 .canal small { display: block; font-size: 0.75rem; }
 .contato__bairros { font-size: var(--texto-pequeno); margin-top: var(--esp-2); }
 @media (hover: hover) and (pointer: fine) { a.canal:hover { background: var(--cor-agua); } }

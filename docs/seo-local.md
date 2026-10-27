@@ -1,6 +1,6 @@
 # SEO — Raiz Odontologia
 
-Atualizado em 27/10/2026. A página está **indexável** (sem `noindex`).
+A página está **indexável** (sem `noindex`).
 
 ## Estratégia
 
@@ -64,12 +64,3 @@ Num projeto real, estas etapas pesam mais que o próprio site para aparecer no m
 6. **Conteúdo**: se a clínica quiser ir além, páginas por tratamento (ex.: "Implante dentário no Água Verde") sempre com uma ação única de agendar.
 7. **Regras do CFO** valem também no Perfil e nas respostas às avaliações: sem preço, sem promoção, sem "antes e depois" sem autorização, CRO visível.
 
-## Projeto conceitual: cuidados com a indexação
-
-- A faixa de "projeto conceitual" no topo da página e a descrição nos dados estruturados avisam que a clínica é fictícia.
-- Nomes, números de CRO e e-mails foram conferidos em 27/10/2026 para não coincidir com pessoas ou registros reais:
-  - equipe: Dra. Clara Wolanski, Dr. Caetano Vilhena, Dra. Lívia Sakamori;
-  - CROs numa faixa bem alta (97.000–98.999), escolhida para ficar longe da numeração em uso no CRO-PR (não há consulta pública automática para confirmar número a número);
-  - e-mails no domínio `.example`, reservado internacionalmente para exemplos e que nunca pode ser registrado.
-- Os telefones continuam fictícios e os botões nunca discam (modo demonstração). Não existe faixa oficial de números "de mentira" no Brasil; a busca não encontrou uso público dos números escolhidos.
-- O Perfil da Empresa no Google **não deve** ser criado para uma clínica fictícia (as regras do Google proíbem).

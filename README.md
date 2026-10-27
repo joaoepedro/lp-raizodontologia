@@ -2,7 +2,7 @@
 
 ![Raiz Odontologia no computador e no celular](docs/portfolio/1-capa-1600x1000.jpg)
 
-Landing page de clínica odontológica em que o paciente **vê os horários livres e marca a avaliação em 1 minuto**, direto no Google Agenda da clínica. Também tem agendamento pelo WhatsApp, formulário de contato para planilha e e-mail, SEO local e rastreamento pronto para Google Ads e Meta.
+Landing page para clínica odontológica criada para transformar visitas em consultas marcadas. Desenvolvida mobile-first, tem agenda integrada ao Google Agenda: o paciente vê os horários disponíveis e agenda na hora, sem precisar trocar mensagens com a recepção. Também conta com WhatsApp, formulário de contato, SEO local e rastreamento de conversões.
 
 > **Projeto conceitual de portfólio** por João Pedro Morais. A clínica, a equipe e os contatos são fictícios.
 
@@ -34,7 +34,7 @@ Landing page de clínica odontológica em que o paciente **vê os horários livr
 | Responsividade | 320 a 1920px, celular deitado, tablet, texto em 200% |
 | Teclado e leitor de tela | Tab completo sem armadilha, foco visível, anúncios na agenda |
 
-Detalhes em [docs/revisao-2026-10-27.md](docs/revisao-2026-10-27.md).
+Como foi testado e o que os testes encontraram: [docs/testes.md](docs/testes.md).
 
 ## Tecnologias
 
@@ -48,7 +48,7 @@ css/      reset.css · variables.css (tokens) · style.css
 js/       config.js (painel de controle) · utils.js · tracking.js · agenda.js · form.js · main.js · obrigado.js
 assets/   img/ (WebP em 3 tamanhos, imagem de compartilhamento) · fonts/ (.woff2 + licenças OFL)
 integracoes/apps-script/   Code.gs · appsscript.json · LEIA-ME.md
-docs/     ponto de partida, briefing, persona, copy, identidade visual, SEO, revisão, estudo de caso, guia de edição, portfolio/
+docs/     ponto de partida, briefing, persona, copy, identidade visual, SEO, testes, estudo de caso, guia de edição, portfolio/
 robots.txt · sitemap.xml · vercel.json
 ```
 

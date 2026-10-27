@@ -46,7 +46,7 @@
     /* ---------- Mensagens prontas do WhatsApp ---------- */
     mensagensWhatsApp: {
       geral: "Olá! Vim pelo site e gostaria de agendar uma consulta de avaliação na Raiz Odontologia.",
-      agenda: "Olá! Vim pelo site e prefiro agendar minha avaliação por aqui. Que horários vocês têm?",
+      agenda: "Olá! Vim pelo site e prefiro agendar minha avaliação por aqui. Quais horários vocês têm?",
       duvida: "Olá! Vim pelo site e tenho uma dúvida antes de agendar.",
       posAgendamento: "Olá! Acabei de agendar pelo site para {dia} às {hora}. Gostaria de confirmar.",
     },

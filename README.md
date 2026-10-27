@@ -4,7 +4,7 @@
 
 Landing page de clínica odontológica em que o paciente **vê os horários livres e marca a avaliação em 1 minuto**, direto no Google Agenda da clínica. Também tem agendamento pelo WhatsApp, formulário de contato para planilha e e-mail, SEO local e rastreamento pronto para Google Ads e Meta.
 
-> **Projeto conceitual de portfólio** por João Pedro Morais, a partir de um pedido real do 99Freelas. A clínica, a equipe e os contatos são fictícios.
+> **Projeto conceitual de portfólio** por João Pedro Morais. A clínica, a equipe e os contatos são fictícios.
 
 **Site:** https://raizodontologia.vercel.app · **Estudo de caso:** [docs/estudo-de-caso.md](docs/estudo-de-caso.md)
 
@@ -48,7 +48,7 @@ css/      reset.css · variables.css (tokens) · style.css
 js/       config.js (painel de controle) · utils.js · tracking.js · agenda.js · form.js · main.js · obrigado.js
 assets/   img/ (WebP em 3 tamanhos, imagem de compartilhamento) · fonts/ (.woff2 + licenças OFL)
 integracoes/apps-script/   Code.gs · appsscript.json · LEIA-ME.md
-docs/     ponto de partida, briefing, persona, copy, identidade visual, SEO, revisão, estudo de caso, portfolio/
+docs/     ponto de partida, briefing, persona, copy, identidade visual, SEO, revisão, estudo de caso, guia de edição, portfolio/
 robots.txt · sitemap.xml · vercel.json
 ```
 
@@ -71,7 +71,7 @@ Tudo o que muda fica em `js/config.js`:
 - `rastreamento`: IDs do GTM, GA4, Google Ads, Meta Pixel e Clarity. Sem ID, os eventos aparecem no console.
 - Contatos, horários de atendimento, mensagens do WhatsApp e redes sociais.
 
-Textos e imagens editáveis estão marcados no HTML com `<!-- ✏️ EDITÁVEL -->` … `<!-- ✏️ FIM -->`.
+Textos e imagens editáveis estão marcados no HTML com `<!-- ✏️ EDITÁVEL -->` … `<!-- ✏️ FIM -->`. Passo a passo para quem vai manter a página: [docs/guia-de-edicao.md](docs/guia-de-edicao.md).
 
 ## Eventos de conversão
 

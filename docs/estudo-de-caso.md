@@ -6,7 +6,7 @@ Site: https://raizodontologia.vercel.app · Código: https://github.com/joaoeped
 
 ![Capa do projeto](portfolio/1-capa-1600x1000.jpg)
 
-> A clínica, a equipe e os contatos são fictícios. O pedido que deu origem ao projeto é real (99Freelas): landing page para clínica odontológica, com foco em conversão, agendamento e regras do conselho de odontologia.
+> A clínica, a equipe e os contatos são fictícios. O ponto de partida foi um pedido real de cliente: landing page para clínica odontológica, com foco em conversão, agendamento e regras do conselho de odontologia.
 
 ## O desafio
 

@@ -8,12 +8,9 @@
   <title>Raiz Odontologia | Dentista no Água Verde, Curitiba</title>
   <!-- ✏️ FIM -->
   <!-- ✏️ EDITÁVEL: descrição no Google (até 155 caracteres) -->
-  <meta name="description" content="Avaliação completa, explicada com calma, e plano de tratamento por escrito. Veja os horários livres e marque sua consulta no Água Verde, Curitiba.">
+  <meta name="description" content="Dentista no Água Verde, Curitiba. Avaliação completa, explicada com calma, e plano de tratamento por escrito. Veja os horários livres e agende online.">
   <!-- ✏️ FIM -->
-
-  <!-- Projeto conceitual: a clínica é fictícia, então a página não deve aparecer
-       em buscas reais por dentista. Em um projeto real, apague a linha abaixo. -->
-  <meta name="robots" content="noindex, follow">
+  <meta name="robots" content="index, follow, max-image-preview:large">
 
   <link rel="canonical" href="https://raizodontologia.vercel.app/">
   <meta name="theme-color" content="#F1F6F5">
@@ -23,9 +20,10 @@
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Raiz Odontologia">
   <meta property="og:title" content="Um sorriso saudável começa pela raiz">
-  <meta property="og:description" content="Clínica odontológica no Água Verde, Curitiba. Marque sua avaliação online.">
+  <meta property="og:description" content="Clínica odontológica no Água Verde, Curitiba. Veja os horários livres e marque sua avaliação online.">
   <meta property="og:url" content="https://raizodontologia.vercel.app/">
   <meta property="og:image" content="https://raizodontologia.vercel.app/assets/img/og-raiz-odontologia.jpg">
+  <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Raiz Odontologia: Um sorriso saudável começa pela raiz">
@@ -42,27 +40,149 @@
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- Dados estruturados (SEO local): o Google lê nome, bairro, horários, equipe e tratamentos daqui.
+       Ao trocar contatos, horários ou equipe no config.js/HTML, atualize também este bloco. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Dentist",
-    "name": "Raiz Odontologia",
-    "description": "Clínica odontológica no Água Verde, Curitiba (projeto conceitual de portfólio).",
-    "url": "https://raizodontologia.vercel.app/",
-    "image": "https://raizodontologia.vercel.app/assets/img/og-raiz-odontologia.jpg",
-    "telephone": "+55-41-3000-0000",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Curitiba",
-      "addressRegion": "PR",
-      "addressCountry": "BR",
-      "streetAddress": "Água Verde"
-    },
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "19:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "12:00" }
-    ],
-    "medicalSpecialty": ["Dentistry"]
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://raizodontologia.vercel.app/#site",
+        "url": "https://raizodontologia.vercel.app/",
+        "name": "Raiz Odontologia",
+        "inLanguage": "pt-BR",
+        "publisher": {
+          "@id": "https://raizodontologia.vercel.app/#clinica"
+        }
+      },
+      {
+        "@type": "Dentist",
+        "@id": "https://raizodontologia.vercel.app/#clinica",
+        "name": "Raiz Odontologia",
+        "description": "Clínica odontológica no Água Verde, Curitiba: avaliação completa, plano de tratamento por escrito e agenda online (projeto conceitual de portfólio).",
+        "url": "https://raizodontologia.vercel.app/",
+        "logo": "https://raizodontologia.vercel.app/assets/img/apple-touch-icon.png",
+        "image": "https://raizodontologia.vercel.app/assets/img/og-raiz-odontologia.jpg",
+        "telephone": "+55-41-3000-0000",
+        "email": "contato@raizodontologia.example",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Curitiba",
+          "addressRegion": "PR",
+          "addressCountry": "BR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -25.451,
+          "longitude": -49.281
+        },
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=%C3%81gua+Verde%2C+Curitiba+-+PR",
+        "areaServed": [
+          {
+            "@type": "Place",
+            "name": "Água Verde, Curitiba - PR"
+          },
+          {
+            "@type": "Place",
+            "name": "Batel, Curitiba - PR"
+          },
+          {
+            "@type": "Place",
+            "name": "Rebouças, Curitiba - PR"
+          },
+          {
+            "@type": "Place",
+            "name": "Portão, Curitiba - PR"
+          },
+          {
+            "@type": "Place",
+            "name": "Vila Izabel, Curitiba - PR"
+          },
+          {
+            "@type": "Place",
+            "name": "Bigorrilho, Curitiba - PR"
+          },
+          {
+            "@type": "Place",
+            "name": "Centro, Curitiba - PR"
+          }
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "19:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "08:00",
+            "closes": "12:00"
+          }
+        ],
+        "medicalSpecialty": "Dentistry",
+        "isAcceptingNewPatients": true,
+        "availableService": [
+          {
+            "@type": "MedicalProcedure",
+            "name": "Consulta de avaliação e prevenção"
+          },
+          {
+            "@type": "MedicalProcedure",
+            "name": "Limpeza e tratamento da gengiva (periodontia)"
+          },
+          {
+            "@type": "MedicalProcedure",
+            "name": "Restaurações e tratamento de canal"
+          },
+          {
+            "@type": "MedicalProcedure",
+            "name": "Clareamento dental"
+          },
+          {
+            "@type": "MedicalProcedure",
+            "name": "Ortodontia (aparelho fixo e alinhadores)"
+          },
+          {
+            "@type": "MedicalProcedure",
+            "name": "Facetas e lentes de contato dental"
+          },
+          {
+            "@type": "MedicalProcedure",
+            "name": "Implantes e próteses"
+          },
+          {
+            "@type": "MedicalProcedure",
+            "name": "Odontopediatria"
+          }
+        ],
+        "employee": [
+          {
+            "@type": "Person",
+            "name": "Dra. Clara Wolanski",
+            "jobTitle": "Responsável técnica · Clínica geral e periodontia"
+          },
+          {
+            "@type": "Person",
+            "name": "Dr. Caetano Vilhena",
+            "jobTitle": "Implantodontia e prótese"
+          },
+          {
+            "@type": "Person",
+            "name": "Dra. Lívia Sakamori",
+            "jobTitle": "Ortodontia e odontopediatria"
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -168,8 +288,8 @@
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M7.5 3C5 3 3.5 4.8 3.5 7.3c0 2.4 1 4 1.6 6.4.5 2.2.9 7.3 2.5 7.3 1.5 0 1.6-4.6 4.4-4.6s2.9 4.6 4.4 4.6c1.6 0 2-5.1 2.5-7.3.6-2.4 1.6-4 1.6-6.4C20.5 4.8 19 3 16.5 3c-1.8 0-2.8 1.1-4.5 1.1S9.3 3 7.5 3z"/></svg>
             </span>
             <span class="cartao-rt__texto">
-              <strong data-config="responsavelTecnica.nome">Dra. Helena Kowalski</strong>
-              <span>Responsável técnica · <span data-config="responsavelTecnica.cro">CRO-PR 21.437</span></span>
+              <strong data-config="responsavelTecnica.nome">Dra. Clara Wolanski</strong>
+              <span>Responsável técnica · <span data-config="responsavelTecnica.cro">CRO-PR 97.214</span></span>
             </span>
           </figcaption>
         </figure>
@@ -284,7 +404,7 @@
           </figure>
           <div class="clinica__texto revelar">
             <!-- ✏️ EDITÁVEL: título e texto sobre a clínica -->
-            <h2 class="titulo-secao" id="clinica-titulo">Uma clínica pensada para você se sentir à vontade</h2>
+            <h2 class="titulo-secao" id="clinica-titulo">Uma clínica no Água Verde pensada para você se sentir à vontade</h2>
             <p>A Raiz fica no Água Verde, com quatro consultórios, radiografia digital e escaneamento 3D na própria clínica. Você faz os exames sem sair daqui e sem moldagem com massa.</p>
             <p>Todo o material é esterilizado e rastreado por lote. A clínica fica no térreo, com acesso para cadeira de rodas e cantinho para as crianças na recepção.</p>
             <!-- ✏️ FIM -->
@@ -304,26 +424,26 @@
           <!-- ✏️ EDITÁVEL: equipe (nome, área, CRO e frase de até 110 caracteres) -->
           <ul class="equipe__lista">
             <li class="pessoa revelar">
-              <span class="pessoa__inicial" aria-hidden="true">HK</span>
+              <span class="pessoa__inicial" aria-hidden="true">CW</span>
               <div>
-                <h4 class="pessoa__nome">Dra. Helena Kowalski</h4>
-                <p class="pessoa__area">Responsável técnica · Clínica geral e periodontia · CRO-PR 21.437</p>
+                <h4 class="pessoa__nome">Dra. Clara Wolanski</h4>
+                <p class="pessoa__area">Responsável técnica · Clínica geral e periodontia · CRO-PR 97.214</p>
                 <blockquote class="pessoa__frase"><p>“Gosto de explicar o porquê de cada coisa. Paciente que entende o tratamento se cuida melhor.”</p></blockquote>
               </div>
             </li>
             <li class="pessoa revelar">
-              <span class="pessoa__inicial" aria-hidden="true">RM</span>
+              <span class="pessoa__inicial" aria-hidden="true">CV</span>
               <div>
-                <h4 class="pessoa__nome">Dr. Rafael Moreira</h4>
-                <p class="pessoa__area">Implantodontia e prótese · CRO-PR 24.906</p>
+                <h4 class="pessoa__nome">Dr. Caetano Vilhena</h4>
+                <p class="pessoa__area">Implantodontia e prótese · CRO-PR 98.031</p>
                 <blockquote class="pessoa__frase"><p>“Implante é planejamento. Mostro as imagens e as opções antes de qualquer decisão.”</p></blockquote>
               </div>
             </li>
             <li class="pessoa revelar">
-              <span class="pessoa__inicial" aria-hidden="true">JT</span>
+              <span class="pessoa__inicial" aria-hidden="true">LS</span>
               <div>
-                <h4 class="pessoa__nome">Dra. Júlia Tanaka</h4>
-                <p class="pessoa__area">Ortodontia e odontopediatria · CRO-PR 29.158</p>
+                <h4 class="pessoa__nome">Dra. Lívia Sakamori</h4>
+                <p class="pessoa__area">Ortodontia e odontopediatria · CRO-PR 98.560</p>
                 <blockquote class="pessoa__frase"><p>“Com criança, a primeira consulta é para conhecer. Sem pressa, no tempo dela.”</p></blockquote>
               </div>
             </li>
@@ -550,6 +670,9 @@
               <span><strong>Horários</strong>Seg. a sex., 8h às 19h · Sáb., 8h às 12h</span>
             </li>
           </ul>
+          <!-- ✏️ EDITÁVEL: bairros atendidos (até 140 caracteres) -->
+          <p class="contato__bairros">Atendemos pacientes do Água Verde, Batel, Rebouças, Portão, Vila Izabel, Bigorrilho, Centro e região.</p>
+          <!-- ✏️ FIM -->
         </div>
 
         <form class="formulario formulario--cartao" id="form-contato" novalidate aria-labelledby="contato-titulo">
@@ -614,8 +737,8 @@
           <span class="logo__tipo">Odontologia</span>
         </a>
         <p>Clínica odontológica no Água Verde, Curitiba – PR</p>
-        <p>Responsável técnica: <span data-config="responsavelTecnica.nome">Dra. Helena Kowalski</span> · <span data-config="responsavelTecnica.cro">CRO-PR 21.437</span><br>
-          Inscrição da clínica: <span data-config="responsavelTecnica.inscricaoClinica">CRO-PR EPAO 3.582</span> <small>(dados fictícios)</small></p>
+        <p>Responsável técnica: <span data-config="responsavelTecnica.nome">Dra. Clara Wolanski</span> · <span data-config="responsavelTecnica.cro">CRO-PR 97.214</span><br>
+          Inscrição da clínica: <span data-config="responsavelTecnica.inscricaoClinica">CRO-PR EPAO 97.305</span> <small>(dados fictícios)</small></p>
         <ul class="rodape__links">
           <li data-rede="instagram" hidden><a href="#" rel="noopener">Instagram</a></li>
           <li data-rede="facebook" hidden><a href="#" rel="noopener">Facebook</a></li>

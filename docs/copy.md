@@ -15,9 +15,9 @@
 ## SEO
 
 - `<title>` (55): **Raiz Odontologia | Dentista no Água Verde, Curitiba**
-- Meta description (150): **Avaliação completa, explicada com calma, e plano de tratamento por escrito. Veja os horários livres e marque sua consulta no Água Verde, Curitiba.**
+- Meta description (150): **Dentista no Água Verde, Curitiba. Avaliação completa, explicada com calma, e plano de tratamento por escrito. Veja os horários livres e agende online.** (revisada em 27/10/2026 para SEO local)
 - Open Graph título: **Um sorriso saudável começa pela raiz**
-- Open Graph descrição: **Clínica odontológica no Água Verde, Curitiba. Marque sua avaliação online.**
+- Open Graph descrição: **Clínica odontológica no Água Verde, Curitiba. Veja os horários livres e marque sua avaliação online.**
 
 ---
 
@@ -52,7 +52,7 @@ Aqui a gente ouve você antes de qualquer tratamento. Explicamos cada etapa com 
 
 **Imagem (versão final, V2):** foto circular da dentista atendendo uma paciente, com anel dourado. `alt`: "Dentista examinando os dentes de uma paciente jovem no consultório". Banco de imagens licenciado.
 
-**Cartão sobre a foto:** **Dra. Helena Kowalski** · Responsável técnica · CRO-PR 21.437 *(fictício)*
+**Cartão sobre a foto:** **Dra. Clara Wolanski** · Responsável técnica · CRO-PR 97.214 *(fictício)*
 
 ---
 
@@ -109,7 +109,7 @@ Uma avaliação por ano ajuda a enxergar cedo e cuidar com mais tranquilidade.
 
 **[Fórmula]** FAB · **[Gatilho]** autoridade, especificidade, aprovação social (equipe nomeada)
 
-**Título (H2):** Uma clínica pensada para você se sentir à vontade
+**Título (H2):** Uma clínica no Água Verde pensada para você se sentir à vontade *(bairro incluído em 27/10/2026 para SEO local)*
 
 **Texto:**
 A Raiz fica no Água Verde, com quatro consultórios, radiografia digital e escaneamento 3D na própria clínica. Você faz os exames sem sair daqui e sem moldagem com massa.
@@ -130,11 +130,11 @@ Todo o material é esterilizado e rastreado por lote. A clínica fica no térreo
 
 *(Sem fotos individuais: cada pessoa aparece com as iniciais num círculo.)*
 
-- **Dra. Helena Kowalski** — Responsável técnica · Clínica geral e periodontia · CRO-PR 21.437
+- **Dra. Clara Wolanski** — Responsável técnica · Clínica geral e periodontia · CRO-PR 97.214
   "Gosto de explicar o porquê de cada coisa. Paciente que entende o tratamento se cuida melhor."
-- **Dr. Rafael Moreira** — Implantodontia e prótese · CRO-PR 24.906
+- **Dr. Caetano Vilhena** — Implantodontia e prótese · CRO-PR 98.031
   "Implante é planejamento. Mostro as imagens e as opções antes de qualquer decisão."
-- **Dra. Júlia Tanaka** — Ortodontia e odontopediatria · CRO-PR 29.158
+- **Dra. Lívia Sakamori** — Ortodontia e odontopediatria · CRO-PR 98.560
   "Com criança, a primeira consulta é para conhecer. Sem pressa, no tempo dela."
 
 *(Números de CRO fictícios, sinalizado no aviso de projeto conceitual. Em projeto real: número verdadeiro e especialidade registrada no CFO.)*
@@ -224,7 +224,7 @@ Todo o material é esterilizado e rastreado por lote. A clínica fica no térreo
 - Muitos pedidos ao mesmo tempo (fora do modo demo): «Estamos recebendo muitos pedidos agora. Tente de novo em alguns minutos ou agende pelo WhatsApp.»
 
 **Aviso no modo demo (abaixo da agenda):**
-- Com Apps Script: «Agenda de demonstração: os horários são reais em uma agenda de teste, e os agendamentos são apagados toda semana.»
+- Com Apps Script: sem aviso (removido em 27/10/2026; a faixa de projeto conceitual no topo já informa).
 - Sem Apps Script (prévia): «Agenda de demonstração: nesta prévia os horários são simulados no seu navegador. Com o Apps Script configurado, eles vêm de um Google Agenda de teste.»
 
 **Janela do modo demo (cliques em WhatsApp e telefone):** «Este é um projeto conceitual» + explicação + a mensagem que seria enviada. «Entendi»
@@ -293,13 +293,15 @@ Todo o material é esterilizado e rastreado por lote. A clínica fica no térreo
 - Endereço: Água Verde, Curitiba – PR *(endereço completo omitido: projeto conceitual)*
 - Horários: Seg. a sex., 8h às 19h · Sáb., 8h às 12h
 
+**Bairros atendidos (abaixo dos canais):** Atendemos pacientes do Água Verde, Batel, Rebouças, Portão, Vila Izabel, Bigorrilho, Centro e região. *(SEO local, 27/10/2026)*
+
 ---
 
 ## 10. Rodapé
 
 - Mapa do bairro Água Verde (Google Maps incorporado sob clique, para não pesar e não carregar cookies antes do consentimento: «Ver no mapa»)
 - **Raiz Odontologia** · Clínica odontológica no Água Verde, Curitiba – PR
-- Responsável técnica: Dra. Helena Kowalski · CRO-PR 21.437 · Inscrição da clínica CRO-PR EPAO 3.582 *(fictícios)*
+- Responsável técnica: Dra. Clara Wolanski · CRO-PR 97.214 · Inscrição da clínica CRO-PR EPAO 97.305 *(fictícios)*
 - Redes: Instagram · Facebook (links desativados no modo demo)
 - «Política de Privacidade» · «Preferências de cookies»
 - © 2026 Raiz Odontologia · Projeto conceitual de portfólio por João Pedro Morais (definido em `site.autorPortfolio` no config.js)

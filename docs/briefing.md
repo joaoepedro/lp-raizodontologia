@@ -13,9 +13,9 @@
 - **Cidade:** Curitiba – PR, bairro Água Verde (endereço fictício, sem número real; o mapa mostra só o bairro).
 - **Atendimento:** particular. Segunda a sexta, 8h às 19h; sábado, 8h às 12h.
 - **Equipe (fictícia):**
-  - Dra. Helena Kowalski — clínica geral e periodontia; **responsável técnica**, CRO-PR (número fictício, sinalizado na página)
-  - Dr. Rafael Moreira — implantodontia e prótese
-  - Dra. Júlia Tanaka — ortodontia e odontopediatria
+  - Dra. Clara Wolanski — clínica geral e periodontia; **responsável técnica**, CRO-PR (número fictício, sinalizado na página)
+  - Dr. Caetano Vilhena — implantodontia e prótese
+  - Dra. Lívia Sakamori — ortodontia e odontopediatria
 - **Estrutura:** 4 consultórios, radiografia digital na clínica, escaneamento intraoral (sem moldagem com massa), esterilização com rastreabilidade, acessibilidade no térreo, sala de espera infantil.
 
 ## Tratamentos (cards)

@@ -337,11 +337,10 @@
 
   /* ---------- Ligações ---------- */
   function iniciar() {
-    if (U.lerConfig("modoDemo")) {
+    // Aviso só quando os horários são simulados (sem Apps Script). Com a agenda real ligada, não aparece nada.
+    if (U.lerConfig("modoDemo") && !URL_API) {
       el.avisoDemo.hidden = false;
-      el.avisoDemo.textContent = URL_API
-        ? "Agenda de demonstração: os horários são reais em uma agenda de teste, e os agendamentos são apagados toda semana."
-        : "Agenda de demonstração: nesta prévia os horários são simulados no seu navegador. Com o Apps Script configurado, eles vêm de um Google Agenda de teste.";
+      el.avisoDemo.textContent = "Agenda de demonstração: nesta prévia os horários são simulados no seu navegador. Com o Apps Script configurado, eles vêm de um Google Agenda de teste.";
     }
 
     const passo = () => Math.max(el.dias.clientWidth * 0.8, 160);

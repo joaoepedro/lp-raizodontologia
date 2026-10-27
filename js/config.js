@@ -31,7 +31,7 @@
       whatsappExibicao: "(41) 90000-0000",
       telefone: "+554130000000",            // formato internacional para o link tel:
       telefoneExibicao: "(41) 3000-0000",
-      email: "contato@raizodontologia.com.br",
+      email: "contato@raizodontologia.example",
       bairro: "Água Verde",
       cidade: "Curitiba",
       uf: "PR",
@@ -41,9 +41,9 @@
 
     /* ---------- Responsável técnica (CFO) ---------- */
     responsavelTecnica: {
-      nome: "Dra. Helena Kowalski",
-      cro: "CRO-PR 21.437",
-      inscricaoClinica: "CRO-PR EPAO 3.582",
+      nome: "Dra. Clara Wolanski",
+      cro: "CRO-PR 97.214",
+      inscricaoClinica: "CRO-PR EPAO 97.305",
     },
 
     /* ---------- Mensagens prontas do WhatsApp ---------- */
